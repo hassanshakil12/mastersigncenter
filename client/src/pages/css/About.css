@@ -1,0 +1,159 @@
+/* General Container */
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+/* Header */
+.about-header {
+    text-align: center;
+    background: linear-gradient(135deg, #007bff, #87bcf8);
+    color: #fff;
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+.about-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Sections */
+.about-container section {
+    margin-top: 50px;
+}
+
+.about-container h2 {
+    font-size: 28px;
+    color: #007bff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.about-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.team-member {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-photo {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team-member p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Group Photo */
+.group-photo {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.group-photo img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Values */
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values li {
+    font-size: 18px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+}
+
+.testimonials a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.testimonials a:hover {
+    text-decoration: underline;
+}
+
+/* Certifications */
+.certifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certifications li {
+    font-size: 18px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 28px;
+    }
+
+    .about-header p {
+        font-size: 16px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .values li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}

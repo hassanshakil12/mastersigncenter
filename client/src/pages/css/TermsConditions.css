@@ -1,0 +1,90 @@
+/* General Container */
+.terms-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background: #fff;
+    line-height: 1.8;
+}
+
+/* Header */
+.terms-container h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.terms-container p {
+    text-align: left;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Sections */
+.terms-container section {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.terms-container h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Lists */
+.terms-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.terms-container ul li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.terms-container ul li::before {
+    content: "✔";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Links */
+.terms-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.terms-container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .terms-container {
+        padding: 20px;
+    }
+
+    .terms-container section {
+        padding: 15px;
+    }
+
+    .terms-container h2 {
+        font-size: 28px;
+    }
+
+    .terms-container h3 {
+        font-size: 18px;
+    }
+}

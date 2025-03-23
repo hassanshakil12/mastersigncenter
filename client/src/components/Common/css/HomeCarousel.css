@@ -1,0 +1,145 @@
+/* Full-Width Carousel */
+.home-carousel {
+    width: 100%;
+    height: 90vh;
+    /* Full screen height */
+    position: relative;
+}
+
+/* Carousel Content */
+.carousel-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Make it full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Image */
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cover full area */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Overlay */
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for readability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Overlay Text */
+.carousel-overlay-text {
+    text-align: center;
+    color: #fff;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.carousel-overlay-text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.carousel-overlay-text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.carousel-menu {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.carousel-btn {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.carousel-btn:first-child {
+    background: #007bff;
+    color: #fff;
+    border: 2px solid #007bff;
+}
+
+.carousel-btn:first-child:hover {
+    background: #222;
+    border: 2px solid #fff;
+}
+
+.carousel-btn:last-child {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.carousel-btn:last-child:hover {
+    background: #007bff;
+    color: #fff;
+    border: 2px solid #007bff;
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+    background: #fff !important;
+    width: 12px;
+    height: 12px;
+    opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+    background: #007bff !important;
+    transform: scale(1.3);
+}
+
+/* Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #007bff !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-overlay-text h2 {
+        font-size: 30px;
+    }
+
+    .carousel-overlay-text p {
+        font-size: 16px;
+    }
+
+    .carousel-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
