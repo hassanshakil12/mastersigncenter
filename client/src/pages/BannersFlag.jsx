@@ -20,7 +20,7 @@ const categories = [
   },
   {
     name: "Flags",
-    image: signImg2, // Replace with actual image import
+    image: signImg02, // Replace with actual image import
     link: "/flags",
   },
   {

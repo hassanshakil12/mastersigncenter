@@ -1,5 +1,5 @@
 import React from "react";
-import { Gallery } from "../components";
+import { Gallery, CaseStudies, ClientReviews } from "../components";
 import galleryImg1 from "../assets/gallery01.jpg";
 
 const imagesData = [
@@ -81,6 +81,8 @@ const GalleryPage = () => {
   return (
     <div>
       <Gallery images={imagesData} />
+      <CaseStudies />
+      <ClientReviews />
     </div>
   );
 };

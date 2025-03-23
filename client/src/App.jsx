@@ -32,6 +32,7 @@ import {
   VehicleTrailer,
   IndoorSigns,
   OutdoorSigns,
+  Accessories,
 } from "./pages";
 import { PrivateRoutes, ProtectedRoutes, Navbar, Footer } from "./components";
 
@@ -68,7 +69,7 @@ const App = () => {
           <Route path="/vehicle-trailer" element={<VehicleTrailer />} />
           <Route path="/indoor-signs" element={<IndoorSigns />} />
           <Route path="/outdoor-signs" element={<OutdoorSigns />} />
-          <Route path="/accessories" element={<ExpoDisplay />} />
+          <Route path="/accessories" element={<Accessories />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/blog" element={<Blogs />} />
           <Route path="/testimonials" element={<TestimonialPage />} />

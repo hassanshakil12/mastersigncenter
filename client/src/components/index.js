@@ -14,3 +14,4 @@ export { default as Gallery } from "./Common/Gallery.jsx";
 export { default as CareersPage } from "./Common/CareersPage.jsx";
 export { default as SignPriceCalculator } from "./Common/SignPriceCalculator.jsx";
 export { default as Testimonial } from "./Common/Testimonial.jsx";
+export { default as CaseStudies } from "./Common/CaseStudies.jsx";
